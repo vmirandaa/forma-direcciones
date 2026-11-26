@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cinematográfica | FORMA</title>
   <meta name="robots" content="noindex">
-  <meta name="description" content="Cuarta dirección visual de FORMA: una portada cinematográfica y una galería en lista, con fotos provisorias.">
+  <meta name="description" content="Cuarta dirección visual de FORMA: escenas que se mueven con el scroll y una galería con cada foto junto a su figura, con fotos provisorias.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Geist:wght@400;500&display=swap" rel="stylesheet">
@@ -18,105 +18,125 @@
     <div class="wrap nav-inner">
       <a class="wordmark" href="#inicio">FORMA</a>
       <nav class="nav-links" aria-label="Secciones">
-        <a href="#como">Cómo funciona</a>
-        <a href="#galeria">Galería</a>
-        <a href="#tallas">Tallas</a>
-        <a href="#preguntas">Preguntas</a>
+        <a href="#como"><span class="nav-num">01</span>Cómo funciona</a>
+        <a href="#galeria"><span class="nav-num">02</span>Galería</a>
+        <a href="#tallas"><span class="nav-num">03</span>Tallas</a>
+        <a href="#preguntas"><span class="nav-num">04</span>Preguntas</a>
       </nav>
       <a class="btn btn--primary" href="#inicio">Crear mi figura</a>
     </div>
+    <span class="nav-progress" aria-hidden="true"></span>
   </header>
 
   <main>
-    <!-- Portada: la figura iluminada como en un escenario al atardecer -->
-    <section class="hero" id="inicio" aria-labelledby="hero-title">
-      <div class="hero-light" aria-hidden="true"></div>
-      <div class="wrap hero-inner">
-        <div class="hero-copy">
-          <h1 id="hero-title">Su mascota, hecha escultura.</h1>
-          <p class="lead">Sube su foto y mira su figura en 3D, gratis.</p>
-          <div class="actions">
-            <a class="btn btn--primary" href="#inicio">Crear mi figura</a>
-            <a class="btn btn--secondary" href="#galeria">Ver la galería</a>
+    <!-- Portada en escena: al bajar, el texto se va, la figura pasa al centro y la luz sube -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title" data-pin>
+      <div class="hero-sticky">
+        <div class="hero-light" aria-hidden="true"></div>
+        <div class="wrap hero-inner">
+          <div class="hero-copy">
+            <h1 id="hero-title">Su mascota, hecha escultura.</h1>
+            <p class="lead">Sube su foto y mira su figura en 3D, gratis.</p>
+            <div class="actions">
+              <a class="btn btn--primary" href="#inicio">Crear mi figura</a>
+              <a class="btn btn--secondary" href="#galeria">Ver la galería</a>
+            </div>
           </div>
+          <figure class="hero-stage">
+            <div class="hero-model" id="hero-model">
+              <img src="assets/images/sample-figure.webp" width="900" height="1200" alt="Figura de muestra en blanco, de un corgi de pie">
+            </div>
+            <figcaption>Figura de muestra. Arrástrala para girarla.</figcaption>
+          </figure>
         </div>
-        <figure class="hero-stage">
-          <div class="hero-model" id="hero-model">
-            <img src="assets/images/sample-figure.webp" width="900" height="1200" alt="Figura de muestra en blanco, de un corgi de pie">
-          </div>
-          <figcaption>Figura de muestra. Arrástrala para girarla.</figcaption>
-        </figure>
+        <p class="hero-after">Cada figura parte de una foto real.</p>
       </div>
     </section>
 
-    <!-- Cómo funciona, en tres pasos -->
-    <section class="steps" id="como" aria-labelledby="como-title">
-      <div class="wrap steps-inner">
-        <h2 id="como-title">De una foto a una pieza.</h2>
-        <ol class="step-list">
-          <li><span class="step-num">01</span><h3>Su foto</h3><p>Una foto de cuerpo completo basta. Con fotos de costado y espalda, mejor.</p></li>
-          <li><span class="step-num">02</span><h3>Su figura en 3D</h3><p>En minutos la ves en 3D y la giras. Gratis, antes de pagar.</p></li>
-          <li><span class="step-num">03</span><h3>En su casa</h3><p>La imprimimos en el taller y llega en blanco, o pintada si la pides así.</p></li>
+    <!-- Cómo funciona: tres escenas que pasan de lado mientras se baja -->
+    <section class="steps" id="como" aria-labelledby="como-title" data-pin>
+      <div class="steps-sticky">
+        <div class="wrap section-head">
+          <span class="section-num">01</span>
+          <h2 id="como-title">De una foto a una pieza.</h2>
+        </div>
+        <ol class="step-track">
+          <li class="step-card">
+            <div class="step-media"><img src="assets/images/corgi-photo.jpg" width="1280" height="1917" alt="Foto de un corgi de pie en el pasto" loading="lazy"></div>
+            <div class="step-text"><span class="step-num">01</span><h3>Su foto</h3><p>Una foto de cuerpo completo basta. Con fotos de costado y espalda, mejor.</p></div>
+          </li>
+          <li class="step-card">
+            <div class="step-media step-media--stage"><img src="assets/images/figure-silhouette.webp" alt="La figura del corgi en 3D, todavía sin pintar" loading="lazy"></div>
+            <div class="step-text"><span class="step-num">02</span><h3>Su figura en 3D</h3><p>En minutos la ves en 3D y la giras. Gratis, antes de pagar.</p></div>
+          </li>
+          <li class="step-card">
+            <div class="step-media step-media--stage step-media--lit"><img src="assets/images/sample-figure.webp" width="900" height="1200" alt="La figura impresa del corgi, en blanco" loading="lazy"></div>
+            <div class="step-text"><span class="step-num">03</span><h3>En su casa</h3><p>La imprimimos en el taller y llega en blanco, o pintada si la pides así.</p></div>
+          </li>
         </ol>
       </div>
     </section>
 
-    <!-- Galería en lista: al pasar por un nombre aparecen su foto y su figura -->
+    <!-- Galería: cada mascota con su foto y su figura en cuadrados del mismo tamaño, sueltas, moviéndose con el scroll -->
     <section class="gallery" id="galeria" aria-labelledby="galeria-title">
       <div class="wrap">
-        <div class="gallery-head">
+        <div class="section-head section-head--split reveal" data-scroll>
+          <span class="section-num">02</span>
           <h2 id="galeria-title">Galería</h2>
-          <p>Cada mascota, con su foto y su figura.</p>
+          <p>Cada mascota, con su foto y su figura al mismo tamaño.</p>
         </div>
-        <ul class="gallery-list">
-          <li class="case" tabindex="0">
-            <span class="case-name">Luna</span><span class="case-kind">Corgi</span><span class="case-spec">10 cm, en blanco</span>
-            <span class="stack" aria-hidden="true">
-              <span class="stack-card stack-card--photo"><img src="assets/images/corgi-photo.jpg" width="1280" height="1917" alt="" loading="lazy"></span>
-              <span class="stack-card stack-card--figure"><img src="assets/images/sample-figure.webp" width="900" height="1200" alt="" loading="lazy"></span>
-            </span>
+        <ul class="pairs">
+          <li class="pair" data-scroll style="--x: 0; --speed: 0.5">
+            <div class="pair-images">
+              <figure><img src="assets/images/corgi-photo.jpg" width="1280" height="1917" alt="Luna, en su foto" loading="lazy" style="object-position: 50% 35%"><figcaption>Foto</figcaption></figure>
+              <figure class="pair-figure"><img src="assets/images/sample-figure.webp" width="900" height="1200" alt="La figura de Luna" loading="lazy"><figcaption>Figura</figcaption></figure>
+            </div>
+            <p class="pair-cap"><span class="pair-name">Luna</span><span>Corgi · 10 cm, en blanco</span></p>
           </li>
-          <li class="case" tabindex="0">
-            <span class="case-name">Canela</span><span class="case-kind">Perra mestiza</span><span class="case-spec">12 cm, pintada</span>
-            <span class="stack" aria-hidden="true">
-              <span class="stack-card stack-card--photo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Liver_yellow_dog_in_the_water_looking_at_viewer_at_golden_hour_in_Don_Det_Laos.jpg/960px-Liver_yellow_dog_in_the_water_looking_at_viewer_at_golden_hour_in_Don_Det_Laos.jpg" width="960" height="720" alt="" loading="lazy" style="object-position: 60% 45%"></span>
-              <span class="stack-card stack-card--figure"><img src="assets/images/sample-figure.webp" width="900" height="1200" alt="" loading="lazy"></span>
-            </span>
+          <li class="pair" data-scroll style="--x: 0.9; --speed: 1">
+            <div class="pair-images">
+              <figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Liver_yellow_dog_in_the_water_looking_at_viewer_at_golden_hour_in_Don_Det_Laos.jpg/960px-Liver_yellow_dog_in_the_water_looking_at_viewer_at_golden_hour_in_Don_Det_Laos.jpg" width="960" height="720" alt="Canela, en su foto" loading="lazy" style="object-position: 60% 45%"><figcaption>Foto</figcaption></figure>
+              <figure class="pair-figure"><img src="assets/images/sample-figure.webp" width="900" height="1200" alt="La figura de Canela" loading="lazy"><figcaption>Figura</figcaption></figure>
+            </div>
+            <p class="pair-cap"><span class="pair-name">Canela</span><span>Perra mestiza · 12 cm, pintada</span></p>
           </li>
-          <li class="case" tabindex="0">
-            <span class="case-name">Nube</span><span class="case-kind">Gata</span><span class="case-spec">8 cm, alcancía</span>
-            <span class="stack" aria-hidden="true">
-              <span class="stack-card stack-card--photo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Felis_catus-cat_on_snow.jpg/960px-Felis_catus-cat_on_snow.jpg" width="960" height="640" alt="" loading="lazy" style="object-position: 40% 50%"></span>
-              <span class="stack-card stack-card--figure"><img src="assets/images/sample-figure.webp" width="900" height="1200" alt="" loading="lazy"></span>
-            </span>
+          <li class="pair" data-scroll style="--x: 0.25; --speed: 0.7">
+            <div class="pair-images">
+              <figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Felis_catus-cat_on_snow.jpg/960px-Felis_catus-cat_on_snow.jpg" width="960" height="640" alt="Nube, en su foto" loading="lazy" style="object-position: 40% 50%"><figcaption>Foto</figcaption></figure>
+              <figure class="pair-figure"><img src="assets/images/sample-figure.webp" width="900" height="1200" alt="La figura de Nube" loading="lazy"><figcaption>Figura</figcaption></figure>
+            </div>
+            <p class="pair-cap"><span class="pair-name">Nube</span><span>Gata · 8 cm, alcancía</span></p>
           </li>
-          <li class="case" tabindex="0">
-            <span class="case-name">Simón</span><span class="case-kind">Gato atigrado</span><span class="case-spec">15 cm, pintado</span>
-            <span class="stack" aria-hidden="true">
-              <span class="stack-card stack-card--photo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/960px-Cat_November_2010-1a.jpg" width="960" height="1282" alt="" loading="lazy"></span>
-              <span class="stack-card stack-card--figure"><img src="assets/images/sample-figure.webp" width="900" height="1200" alt="" loading="lazy"></span>
-            </span>
+          <li class="pair" data-scroll style="--x: 1; --speed: 0.4">
+            <div class="pair-images">
+              <figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/960px-Cat_November_2010-1a.jpg" width="960" height="1282" alt="Simón, en su foto" loading="lazy"><figcaption>Foto</figcaption></figure>
+              <figure class="pair-figure"><img src="assets/images/sample-figure.webp" width="900" height="1200" alt="La figura de Simón" loading="lazy"><figcaption>Figura</figcaption></figure>
+            </div>
+            <p class="pair-cap"><span class="pair-name">Simón</span><span>Gato atigrado · 15 cm, pintado</span></p>
           </li>
-          <li class="case" tabindex="0">
-            <span class="case-name">Rocco</span><span class="case-kind">Perro mestizo</span><span class="case-spec">10 cm, ánfora</span>
-            <span class="stack" aria-hidden="true">
-              <span class="stack-card stack-card--photo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Human%E2%80%93canine_friendship_-_girl_hugging_her_dog_tightly_at_golden_hour_in_Laos.jpg/960px-Human%E2%80%93canine_friendship_-_girl_hugging_her_dog_tightly_at_golden_hour_in_Laos.jpg" width="960" height="1440" alt="" loading="lazy" style="object-position: 50% 40%"></span>
-              <span class="stack-card stack-card--figure"><img src="assets/images/sample-figure.webp" width="900" height="1200" alt="" loading="lazy"></span>
-            </span>
+          <li class="pair" data-scroll style="--x: 0.1; --speed: 0.9">
+            <div class="pair-images">
+              <figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Human%E2%80%93canine_friendship_-_girl_hugging_her_dog_tightly_at_golden_hour_in_Laos.jpg/960px-Human%E2%80%93canine_friendship_-_girl_hugging_her_dog_tightly_at_golden_hour_in_Laos.jpg" width="960" height="1440" alt="Rocco, en su foto" loading="lazy" style="object-position: 50% 40%"><figcaption>Foto</figcaption></figure>
+              <figure class="pair-figure"><img src="assets/images/sample-figure.webp" width="900" height="1200" alt="La figura de Rocco" loading="lazy"><figcaption>Figura</figcaption></figure>
+            </div>
+            <p class="pair-cap"><span class="pair-name">Rocco</span><span>Perro mestizo · 10 cm, ánfora</span></p>
           </li>
         </ul>
       </div>
     </section>
 
-    <!-- Tallas y formatos -->
+    <!-- Tallas: la misma figura a escala, para ver la diferencia real entre tamaños -->
     <section class="sizes" id="tallas" aria-labelledby="tallas-title">
       <div class="wrap">
-        <h2 id="tallas-title">Cuatro tallas.</h2>
-        <ul class="size-row">
-          <li><span class="size-cm">8 cm</span><span class="size-price">$17.990</span><span class="size-note">Pintada, +$12.990</span></li>
-          <li class="size--featured"><span class="size-cm">10 cm</span><span class="size-price">$22.990</span><span class="size-note">La más elegida</span></li>
-          <li><span class="size-cm">12 cm</span><span class="size-price">$31.990</span><span class="size-note">Pintada, +$18.990</span></li>
-          <li><span class="size-cm">15 cm</span><span class="size-price">$45.990</span><span class="size-note">Pintada, +$24.990</span></li>
+        <div class="section-head reveal" data-scroll>
+          <span class="section-num">03</span>
+          <h2 id="tallas-title">Cuatro tallas.</h2>
+        </div>
+        <ul class="size-row reveal" data-scroll>
+          <li style="--cm: 8"><img class="size-figure" src="assets/images/sample-figure.webp" width="900" height="1200" alt="" loading="lazy"><span class="size-cm">8 cm</span><span class="size-price">$17.990</span><span class="size-note">Pintada, +$12.990</span></li>
+          <li class="size--featured" style="--cm: 10"><img class="size-figure" src="assets/images/sample-figure.webp" width="900" height="1200" alt="" loading="lazy"><span class="size-cm">10 cm</span><span class="size-price">$22.990</span><span class="size-note">La más elegida</span></li>
+          <li style="--cm: 12"><img class="size-figure" src="assets/images/sample-figure.webp" width="900" height="1200" alt="" loading="lazy"><span class="size-cm">12 cm</span><span class="size-price">$31.990</span><span class="size-note">Pintada, +$18.990</span></li>
+          <li style="--cm: 15"><img class="size-figure" src="assets/images/sample-figure.webp" width="900" height="1200" alt="" loading="lazy"><span class="size-cm">15 cm</span><span class="size-price">$45.990</span><span class="size-note">Pintada, +$24.990</span></li>
         </ul>
         <p class="formats">También como alcancía, ánfora para sus cenizas o cuadro en relieve.</p>
       </div>
@@ -125,7 +145,7 @@
     <!-- Preguntas -->
     <section class="faq" id="preguntas" aria-labelledby="preguntas-title">
       <div class="wrap faq-inner">
-        <h2 id="preguntas-title">¿Preguntas?</h2>
+        <div class="section-head reveal" data-scroll><span class="section-num">04</span><h2 id="preguntas-title">¿Preguntas?</h2></div>
         <div class="faq-list">
           <details><summary>¿Cuánto cuesta la vista previa?</summary><p>Nada. Solo pagas si decides pedir la figura.</p></details>
           <details><summary>¿Qué foto sirve?</summary><p>Una de cuerpo completo, con buena luz. Si suma costado y espalda, la figura sale más parecida.</p></details>
@@ -135,8 +155,8 @@
       </div>
     </section>
 
-    <!-- Cierre -->
-    <section class="closing" aria-labelledby="cierre-title">
+    <!-- Cierre: la luz sube al llegar -->
+    <section class="closing" aria-labelledby="cierre-title" data-scroll>
       <div class="closing-light" aria-hidden="true"></div>
       <div class="wrap closing-inner">
         <h2 id="cierre-title">Empieza con una foto.</h2>
@@ -153,6 +173,31 @@
   </footer>
 
   <script type="module">
+    // Movimiento con el scroll: cada parte recibe su avance (0 a 1) y el CSS decide qué mover.
+    // --p: cuánto ha pasado por la pantalla. --pin: avance dentro de una escena fija. --page: avance de toda la página.
+    const root = document.documentElement;
+    const flowing = [...document.querySelectorAll('[data-scroll]')];
+    const pinned = [...document.querySelectorAll('[data-pin]')];
+    const clamp = (n) => Math.min(1, Math.max(0, n)).toFixed(4);
+    let queued = false;
+    function update() {
+      queued = false;
+      const vh = window.innerHeight;
+      for (const el of flowing) {
+        const r = el.getBoundingClientRect();
+        el.style.setProperty('--p', clamp((vh - r.top) / (vh + r.height)));
+      }
+      for (const el of pinned) {
+        const r = el.getBoundingClientRect();
+        el.style.setProperty('--pin', clamp(-r.top / Math.max(1, r.height - vh)));
+      }
+      root.style.setProperty('--page', clamp(window.scrollY / Math.max(1, root.scrollHeight - vh)));
+    }
+    const queue = () => { if (!queued) { queued = true; requestAnimationFrame(update); } };
+    window.addEventListener('scroll', queue, { passive: true });
+    window.addEventListener('resize', queue);
+    update();
+
     // Vista 3D en la portada: reemplaza la imagen fija solo si el visor carga. Con "reducir movimiento" no gira sola.
     const slot = document.querySelector('#hero-model');
     const still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
