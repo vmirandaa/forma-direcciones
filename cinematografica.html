@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cinematográfica | FORMA</title>
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Cuarta dirección visual de FORMA: una portada cinematográfica y una galería en lista, con fotos provisorias.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Geist:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cinematografica.css">
+</head>
+<body>
+  <p class="preview-strip"><a href="index.html">Volver a las cuatro direcciones</a><span>Vista previa con fotos provisorias</span></p>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="wordmark" href="#inicio">FORMA</a>
+      <nav class="nav-links" aria-label="Secciones">
+        <a href="#como">Cómo funciona</a>
+        <a href="#galeria">Galería</a>
+        <a href="#tallas">Tallas</a>
+        <a href="#preguntas">Preguntas</a>
+      </nav>
+      <a class="btn btn--primary" href="#inicio">Crear mi figura</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Portada: la figura iluminada como en un escenario al atardecer -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-light" aria-hidden="true"></div>
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <h1 id="hero-title">Su mascota, hecha escultura.</h1>
+          <p class="lead">Sube su foto y mira su figura en 3D, gratis.</p>
+          <div class="actions">
+            <a class="btn btn--primary" href="#inicio">Crear mi figura</a>
+            <a class="btn btn--secondary" href="#galeria">Ver la galería</a>
+          </div>
+        </div>
+        <figure class="hero-stage">
+          <div class="hero-model" id="hero-model">
+            <img src="assets/images/sample-figure.webp" width="900" height="1200" alt="Figura de muestra en blanco, de un corgi de pie">
+          </div>
+          <figcaption>Figura de muestra. Arrástrala para girarla.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Cómo funciona, en tres pasos -->
+    <section class="steps" id="como" aria-labelledby="como-title">
+      <div class="wrap steps-inner">
+        <h2 id="como-title">De una foto a una pieza.</h2>
+        <ol class="step-list">
+          <li><span class="step-num">01</span><h3>Su foto</h3><p>Una foto de cuerpo completo basta. Con fotos de costado y espalda, mejor.</p></li>
+          <li><span class="step-num">02</span><h3>Su figura en 3D</h3><p>En minutos la ves en 3D y la giras. Gratis, antes de pagar.</p></li>
+          <li><span class="step-num">03</span><h3>En su casa</h3><p>La imprimimos en el taller y llega en blanco, o pintada si la pides así.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Galería en lista: al pasar por un nombre aparecen su foto y su figura -->
+    <section class="gallery" id="galeria" aria-labelledby="galeria-title">
+      <div class="wrap">
+        <div class="gallery-head">
+          <h2 id="galeria-title">Galería</h2>
+          <p>Cada mascota, con su foto y su figura.</p>
+        </div>
+        <ul class="gallery-list">
+          <li class="case" tabindex="0">
+            <span class="case-name">Luna</span><span class="case-kind">Corgi</span><span class="case-spec">10 cm, en blanco</span>
+            <span class="stack" aria-hidden="true">
+              <span class="stack-card stack-card--photo"><img src="assets/images/corgi-photo.jpg" width="1280" height="1917" alt="" loading="lazy"></span>
+              <span class="stack-card stack-card--figure"><img src="assets/images/sample-figure.webp" width="900" height="1200" alt="" loading="lazy"></span>
+            </span>
+          </li>
+          <li class="case" tabindex="0">
+            <span class="case-name">Canela</span><span class="case-kind">Perra mestiza</span><span class="case-spec">12 cm, pintada</span>
+            <span class="stack" aria-hidden="true">
+              <span class="stack-card stack-card--photo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Liver_yellow_dog_in_the_water_looking_at_viewer_at_golden_hour_in_Don_Det_Laos.jpg/960px-Liver_yellow_dog_in_the_water_looking_at_viewer_at_golden_hour_in_Don_Det_Laos.jpg" width="960" height="720" alt="" loading="lazy" style="object-position: 60% 45%"></span>
+              <span class="stack-card stack-card--figure"><img src="assets/images/sample-figure.webp" width="900" height="1200" alt="" loading="lazy"></span>
+            </span>
+          </li>
+          <li class="case" tabindex="0">
+            <span class="case-name">Nube</span><span class="case-kind">Gata</span><span class="case-spec">8 cm, alcancía</span>
+            <span class="stack" aria-hidden="true">
+              <span class="stack-card stack-card--photo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Felis_catus-cat_on_snow.jpg/960px-Felis_catus-cat_on_snow.jpg" width="960" height="640" alt="" loading="lazy" style="object-position: 40% 50%"></span>
+              <span class="stack-card stack-card--figure"><img src="assets/images/sample-figure.webp" width="900" height="1200" alt="" loading="lazy"></span>
+            </span>
+          </li>
+          <li class="case" tabindex="0">
+            <span class="case-name">Simón</span><span class="case-kind">Gato atigrado</span><span class="case-spec">15 cm, pintado</span>
+            <span class="stack" aria-hidden="true">
+              <span class="stack-card stack-card--photo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/960px-Cat_November_2010-1a.jpg" width="960" height="1282" alt="" loading="lazy"></span>
+              <span class="stack-card stack-card--figure"><img src="assets/images/sample-figure.webp" width="900" height="1200" alt="" loading="lazy"></span>
+            </span>
+          </li>
+          <li class="case" tabindex="0">
+            <span class="case-name">Rocco</span><span class="case-kind">Perro mestizo</span><span class="case-spec">10 cm, ánfora</span>
+            <span class="stack" aria-hidden="true">
+              <span class="stack-card stack-card--photo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Human%E2%80%93canine_friendship_-_girl_hugging_her_dog_tightly_at_golden_hour_in_Laos.jpg/960px-Human%E2%80%93canine_friendship_-_girl_hugging_her_dog_tightly_at_golden_hour_in_Laos.jpg" width="960" height="1440" alt="" loading="lazy" style="object-position: 50% 40%"></span>
+              <span class="stack-card stack-card--figure"><img src="assets/images/sample-figure.webp" width="900" height="1200" alt="" loading="lazy"></span>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Tallas y formatos -->
+    <section class="sizes" id="tallas" aria-labelledby="tallas-title">
+      <div class="wrap">
+        <h2 id="tallas-title">Cuatro tallas.</h2>
+        <ul class="size-row">
+          <li><span class="size-cm">8 cm</span><span class="size-price">$17.990</span><span class="size-note">Pintada, +$12.990</span></li>
+          <li class="size--featured"><span class="size-cm">10 cm</span><span class="size-price">$22.990</span><span class="size-note">La más elegida</span></li>
+          <li><span class="size-cm">12 cm</span><span class="size-price">$31.990</span><span class="size-note">Pintada, +$18.990</span></li>
+          <li><span class="size-cm">15 cm</span><span class="size-price">$45.990</span><span class="size-note">Pintada, +$24.990</span></li>
+        </ul>
+        <p class="formats">También como alcancía, ánfora para sus cenizas o cuadro en relieve.</p>
+      </div>
+    </section>
+
+    <!-- Preguntas -->
+    <section class="faq" id="preguntas" aria-labelledby="preguntas-title">
+      <div class="wrap faq-inner">
+        <h2 id="preguntas-title">¿Preguntas?</h2>
+        <div class="faq-list">
+          <details><summary>¿Cuánto cuesta la vista previa?</summary><p>Nada. Solo pagas si decides pedir la figura.</p></details>
+          <details><summary>¿Qué foto sirve?</summary><p>Una de cuerpo completo, con buena luz. Si suma costado y espalda, la figura sale más parecida.</p></details>
+          <details><summary>¿La figura llega pintada?</summary><p>Llega en blanco. Si quieres, el taller la pinta a mano con los colores de su foto.</p></details>
+          <details><summary>¿Cuánto tarda?</summary><p>Te confirmamos el plazo al escribirte, según la talla y el acabado.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cierre -->
+    <section class="closing" aria-labelledby="cierre-title">
+      <div class="closing-light" aria-hidden="true"></div>
+      <div class="wrap closing-inner">
+        <h2 id="cierre-title">Empieza con una foto.</h2>
+        <a class="btn btn--primary" href="#inicio">Crear mi figura</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span class="wordmark">FORMA</span>
+      <p>Nombres y casos de la galería son ejemplos provisorios. Fotos: corgi de Huoadg5888 (CC0); perro en el agua y niña con su perro de <a href="https://commons.wikimedia.org/wiki/File:Liver_yellow_dog_in_the_water_looking_at_viewer_at_golden_hour_in_Don_Det_Laos.jpg">Basile Morin</a> (CC BY-SA 4.0); gata en la nieve de <a href="https://commons.wikimedia.org/wiki/File:Felis_catus-cat_on_snow.jpg">Von.grzanka</a> (CC BY-SA 3.0); gato en el muro de <a href="https://commons.wikimedia.org/wiki/File:Cat_November_2010-1a.jpg">Alvesgaspar</a> (CC BY-SA 3.0), en Wikimedia Commons.</p>
+    </div>
+  </footer>
+
+  <script type="module">
+    // Vista 3D en la portada: reemplaza la imagen fija solo si el visor carga. Con "reducir movimiento" no gira sola.
+    const slot = document.querySelector('#hero-model');
+    const still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    import('https://ajax.googleapis.com/ajax/libs/model-viewer/4.4.0/model-viewer.min.js').then(() => {
+      const viewer = document.createElement('model-viewer');
+      Object.entries({
+        src: 'assets/models/sample-figure.glb',
+        alt: 'Figura de muestra en 3D, en blanco',
+        'camera-controls': '',
+        'disable-zoom': '',
+        'touch-action': 'pan-y',
+        'interaction-prompt': 'none',
+        'environment-image': 'neutral',
+        exposure: '1.05',
+        'shadow-intensity': '0',
+        'field-of-view': '24deg',
+        'camera-orbit': '25deg 80deg auto'
+      }).forEach(([name, value]) => viewer.setAttribute(name, value));
+      if (!still) {
+        viewer.setAttribute('auto-rotate', '');
+        viewer.setAttribute('rotation-per-second', '14deg');
+      }
+      viewer.className = 'is-loading';
+      viewer.addEventListener('load', () => { slot.replaceChildren(viewer); viewer.className = ''; }, { once: true });
+      slot.append(viewer);
+    }).catch(() => {});
+  </script>
+</body>
+</html>
