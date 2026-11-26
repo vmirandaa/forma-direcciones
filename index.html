@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Direcciones visuales | FORMA</title>
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Tres direcciones visuales para comparar el estilo de FORMA: galería de noche, catálogo y taller de medidas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prata&family=Manrope:wght@400;500;700&family=Syne:wght@700&family=Onest:wght@400;500&family=JetBrains+Mono:wght@500&family=Hedvig+Letters+Serif:opsz@12..24&family=Geist:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="direcciones.css">
+</head>
+<body>
+  <!-- Portada de la exploración: qué es y a dónde saltar -->
+  <header class="intro" data-theme="intro">
+    <div class="wrap intro-inner">
+      <p class="intro-brand">FORMA</p>
+      <h1>Tres caminos para FORMA.</h1>
+      <p class="intro-lead">El mismo contenido en tres estilos, para elegir el camino.</p>
+      <nav class="intro-links" aria-label="Direcciones">
+        <a class="intro-link" href="#galeria"><span class="swatch swatch--galeria" aria-hidden="true"></span>Galería de noche</a>
+        <a class="intro-link" href="#catalogo"><span class="swatch swatch--catalogo" aria-hidden="true"></span>Catálogo</a>
+        <a class="intro-link" href="#medidas"><span class="swatch swatch--medidas" aria-hidden="true"></span>Taller de medidas</a>
+      </nav>
+      <p class="intro-note">Página de prueba. Las fotos son provisorias: la figura de muestra se reemplazará por fotos de estudio de figuras impresas reales.</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Galería de noche -->
+    <section class="dir" data-theme="galeria" id="galeria" aria-labelledby="galeria-title">
+      <div class="dir-bar">
+        <div class="wrap dir-bar-inner">
+          <span class="wordmark">FORMA</span>
+          <span class="dir-name">Galería de noche</span>
+          <a class="btn btn--primary" href="#galeria">Crear mi figura</a>
+        </div>
+      </div>
+      <div class="wrap galeria-hero">
+        <div class="galeria-copy">
+          <h2 id="galeria-title">Una pieza única, hecha de su foto.</h2>
+          <p class="lead">Mírala en 3D, gratis, antes de encargarla.</p>
+          <div class="actions">
+            <a class="btn btn--primary" href="#galeria">Crear mi figura</a>
+            <a class="btn btn--secondary" href="#galeria-formatos">Ver formatos</a>
+          </div>
+        </div>
+        <figure class="galeria-stage">
+          <div class="stage-slot" id="galeria-model">
+            <img src="assets/images/sample-figure.webp" width="900" height="1200" alt="Figura de muestra en blanco, de un corgi de pie">
+          </div>
+          <figcaption>Gírala con el dedo. Es la vista previa real que recibe cada cliente.</figcaption>
+        </figure>
+      </div>
+      <div class="band" id="galeria-formatos">
+        <div class="wrap">
+          <h3>Cuatro formatos.</h3>
+          <ul class="index">
+            <li><span class="index-name">Figura</span><span class="index-note">La figura sola, de 8 a 15 cm.</span><span class="figure">Desde $17.990</span></li>
+            <li><span class="index-name">Alcancía</span><span class="index-note">Con ranura para monedas.</span><span class="figure">+$7.990</span></li>
+            <li><span class="index-name">Ánfora</span><span class="index-note">Guarda sus cenizas.</span><span class="figure">+$14.990</span></li>
+            <li><span class="index-name">Cuadro 3D</span><span class="index-note">En relieve, dentro de un marco.</span><span class="figure">+$11.990</span></li>
+          </ul>
+        </div>
+      </div>
+      <aside class="wrap spec" aria-label="Ficha de la dirección Galería de noche">
+        <ul class="chips">
+          <li><span class="chip chip--paper"></span>Verde hoja</li>
+          <li><span class="chip chip--ink"></span>Crema</li>
+          <li><span class="chip chip--accent"></span>Lima</li>
+        </ul>
+        <p>Prata para los títulos y Manrope para el texto. La figura blanca brilla sobre el verde, como en una vitrina de museo de noche. Sirve igual para un regalo y para un recuerdo.</p>
+      </aside>
+    </section>
+
+    <!-- 2. Catálogo -->
+    <section class="dir" data-theme="catalogo" id="catalogo" aria-labelledby="catalogo-title">
+      <div class="dir-bar">
+        <div class="wrap dir-bar-inner">
+          <span class="wordmark">FORMA</span>
+          <span class="dir-name">Catálogo</span>
+          <a class="btn btn--primary" href="#catalogo">Crear mi figura</a>
+        </div>
+      </div>
+      <div class="wrap catalogo-hero">
+        <div class="catalogo-copy">
+          <h2 id="catalogo-title">Elige la talla de su figura.</h2>
+          <p class="lead">Cuatro tallas y cuatro formatos, todos desde su foto.</p>
+          <div class="actions">
+            <a class="btn btn--primary" href="#catalogo">Crear mi figura</a>
+            <a class="btn btn--secondary" href="#catalogo-tallas">Ver las tallas</a>
+          </div>
+        </div>
+        <div class="plates">
+          <figure class="plate">
+            <div class="plate-img plate-img--photo"><img src="assets/images/corgi-photo.jpg" width="1280" height="1917" alt="Foto de un corgi de pie sobre las patas traseras"></div>
+            <figcaption><span>Su foto</span><span class="code">FT-0001</span></figcaption>
+          </figure>
+          <figure class="plate">
+            <div class="plate-img plate-img--figure"><img src="assets/images/sample-figure.webp" width="900" height="1200" alt="La figura impresa desde esa foto, en blanco"></div>
+            <figcaption><span>Su figura, 10 cm</span><span class="code">FG-M10</span></figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="wrap" id="catalogo-tallas">
+        <table class="spec-table">
+          <caption>Tallas y precios</caption>
+          <thead><tr><th scope="col">Código</th><th scope="col">Talla</th><th scope="col">Alto</th><th scope="col">En blanco</th><th scope="col">Pintada</th></tr></thead>
+          <tbody>
+            <tr><td class="code">FG-S08</td><td class="spec-name">Talla S</td><td class="code">80 mm</td><td>$17.990</td><td>+$12.990</td></tr>
+            <tr><td class="code">FG-M10</td><td class="spec-name">Talla M, la recomendada</td><td class="code">100 mm</td><td>$22.990</td><td>+$14.990</td></tr>
+            <tr><td class="code">FG-L12</td><td class="spec-name">Talla L</td><td class="code">120 mm</td><td>$31.990</td><td>+$18.990</td></tr>
+            <tr><td class="code">FG-XL15</td><td class="spec-name">Talla XL</td><td class="code">150 mm</td><td>$45.990</td><td>+$24.990</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <aside class="wrap spec" aria-label="Ficha de la dirección Catálogo">
+        <ul class="chips">
+          <li><span class="chip chip--paper"></span>Piedra</li>
+          <li><span class="chip chip--ink"></span>Tinta</li>
+          <li><span class="chip chip--accent"></span>Cobalto</li>
+        </ul>
+        <p>Syne para los títulos, Onest para el texto y una letra de máquina para los códigos. Cada figura es una pieza con su ficha, como en una tienda de diseño. Directo y ordenado; el menos emocional de los tres.</p>
+      </aside>
+    </section>
+
+    <!-- 3. Taller de medidas -->
+    <section class="dir" data-theme="medidas" id="medidas" aria-labelledby="medidas-title">
+      <div class="dir-bar">
+        <div class="wrap dir-bar-inner">
+          <span class="wordmark">FORMA</span>
+          <span class="dir-name">Taller de medidas</span>
+          <a class="btn btn--primary" href="#medidas">Crear mi figura</a>
+        </div>
+      </div>
+      <div class="wrap medidas-hero">
+        <div class="medidas-copy">
+          <h2 id="medidas-title">Su figura, a la medida exacta.</h2>
+          <p class="lead">De 8 a 15 cm, medida contra una taza de café.</p>
+          <div class="actions">
+            <a class="btn btn--primary" href="#medidas">Crear mi figura</a>
+            <a class="btn btn--secondary" href="#medidas-tallas">Comparar tallas</a>
+          </div>
+        </div>
+        <figure class="sheet">
+          <div class="sheet-figure">
+            <img src="assets/images/sample-figure.webp" width="900" height="1200" alt="Figura de muestra en blanco, medida con guías">
+            <span class="guide guide--top" aria-hidden="true"></span>
+            <span class="guide guide--base" aria-hidden="true"></span>
+            <span class="readout readout--top">Alto 100 mm</span>
+            <span class="readout readout--base">Base</span>
+          </div>
+          <figcaption>Talla M, la más elegida.</figcaption>
+        </figure>
+      </div>
+      <div class="wrap" id="medidas-tallas">
+        <div class="ruler" role="img" aria-label="Las cuatro tallas a escala: 8, 10, 12 y 15 centímetros, junto a una taza de 9 centímetros.">
+          <span class="ruler-mark" style="--at: 5">5 cm</span>
+          <span class="ruler-mark" style="--at: 10">10 cm</span>
+          <span class="ruler-mark" style="--at: 15">15 cm</span>
+          <div class="ruler-item" style="--cm: 8"><img src="assets/images/figure-silhouette.webp" width="191" height="480" alt=""><span>S, 8 cm</span></div>
+          <div class="ruler-item" style="--cm: 10"><img src="assets/images/figure-silhouette.webp" width="191" height="480" alt=""><span>M, 10 cm</span></div>
+          <div class="ruler-item" style="--cm: 12"><img src="assets/images/figure-silhouette.webp" width="191" height="480" alt=""><span>L, 12 cm</span></div>
+          <div class="ruler-item" style="--cm: 15"><img src="assets/images/figure-silhouette.webp" width="191" height="480" alt=""><span>XL, 15 cm</span></div>
+          <div class="ruler-item ruler-item--mug" style="--cm: 9"><span class="mug" aria-hidden="true"></span><span>Taza, 9 cm</span></div>
+        </div>
+      </div>
+      <aside class="wrap spec" aria-label="Ficha de la dirección Taller de medidas">
+        <ul class="chips">
+          <li><span class="chip chip--paper"></span>Gris frío</li>
+          <li><span class="chip chip--ink"></span>Azul tinta</li>
+          <li><span class="chip chip--accent"></span>Naranja guía</li>
+        </ul>
+        <p>Hedvig Letters Serif para los títulos y Geist para el texto. Las líneas de medición vuelven protagonista al comparador de tallas. Preciso y confiable; el naranja solo dibuja guías finas, nunca superficies.</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="outro" data-theme="intro">
+    <div class="wrap">
+      <p>Foto del corgi: Huoadg5888 en Wikimedia Commons (CC0). Figura de muestra hecha con IA, provisoria.</p>
+    </div>
+  </footer>
+
+  <script type="module">
+    // La vista 3D de la galería: reemplaza la imagen fija solo si el visor carga. Con "reducir movimiento" no gira sola.
+    const slot = document.querySelector('#galeria-model');
+    const still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    import('https://ajax.googleapis.com/ajax/libs/model-viewer/4.4.0/model-viewer.min.js').then(() => {
+      const viewer = document.createElement('model-viewer');
+      Object.entries({
+        src: 'assets/models/sample-figure.glb',
+        alt: 'Figura de muestra en 3D, en blanco',
+        'camera-controls': '',
+        'disable-zoom': '',
+        'touch-action': 'pan-y',
+        'interaction-prompt': 'none',
+        'environment-image': 'neutral',
+        exposure: '1',
+        'shadow-intensity': '0.6',
+        'field-of-view': '24deg',
+        'camera-orbit': '25deg 80deg auto'
+      }).forEach(([name, value]) => viewer.setAttribute(name, value));
+      if (!still) viewer.setAttribute('auto-rotate', '');
+      viewer.addEventListener('load', () => slot.replaceChildren(viewer), { once: true });
+      viewer.style.position = 'absolute';
+      viewer.style.opacity = '0';
+      slot.append(viewer);
+      viewer.addEventListener('load', () => { viewer.style.position = ''; viewer.style.opacity = ''; }, { once: true });
+    }).catch(() => {});
+  </script>
+</body>
+</html>
